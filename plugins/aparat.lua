@@ -1,8 +1,8 @@
 --[[
 
 #
-#     @GPMOD
-#   @Dragon_Born
+#     @ch_anonymou3tg
+#   @anonymou3nk
 #      
 
 ]]
@@ -13,10 +13,11 @@ local function run(msg, matches)
 		local jdat = json:decode(url)
 
 		local items = jdat.videobysearch
-		text = 'نتیجه جستوجو در آپارات: \n'
+		text = 'نتیجه جستوجو در آپارات🔍: \n'
 		for i = 1, #items do
-		text = text..'\n'..i..'- '..items[i].title..'  -  تعداد بازدید: '..items[i].visit_cnt..'\n    لینک: aparat.com/v/'..items[i].uid
+		text = text..'\n'..i..'- '..items[i].title..'  -  تعداد بازدید👁: '..items[i].visit_cnt..'\n    لینک🔗: aparat.com/v/'..items[i].uid
 		end
+		text = text..'\n\n@ch_anonymou3tg💔'
 		return text
 	end
 end
